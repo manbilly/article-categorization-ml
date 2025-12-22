@@ -1,0 +1,235 @@
+# ============================================================================
+# .gitignore for Article Categorization ML Project
+# FAANG/Production Standard - Verified and Optimized
+# ============================================================================
+
+# ============================================================================
+# JUPYTER NOTEBOOK (Critical - prevents checkpoint pollution)
+# ============================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# ============================================================================
+# PYTHON ARTIFACTS (Standard Python gitignore)
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ============================================================================
+# VIRTUAL ENVIRONMENTS (Never commit these)
+# ============================================================================
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ============================================================================
+# DISTRIBUTION / PACKAGING (Build artifacts)
+# ============================================================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================================
+# PYINSTALLER
+# ============================================================================
+*.manifest
+*.spec
+
+# ============================================================================
+# UNIT TEST / COVERAGE
+# ============================================================================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ============================================================================
+# DATA FILES (CRITICAL - THIS IS WHAT EXCLUDES YOUR CSV)
+# ============================================================================
+# These patterns ensure article_data.csv is NOT tracked by git
+# This follows industry best practice: code in git, data in storage
+
+# Exclude ALL CSV files in data/ directory
+data/*.csv
+data/*.txt
+data/*.json
+data/*.tsv
+
+# Exclude CSV files anywhere in the project (redundant but safe)
+*.csv
+*.tsv
+
+# EXCEPTION: We DO want data/README.md in git
+!data/README.md
+
+# ============================================================================
+# LARGE DATA FILES (ML-specific)
+# ============================================================================
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.parquet
+
+# ============================================================================
+# MODEL FILES (Too large for GitHub, goes in model registry)
+# ============================================================================
+models/
+saved_models/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.onnx
+*.pb
+*.safetensors
+
+# ============================================================================
+# LOGS (Never commit logs)
+# ============================================================================
+*.log
+logs/
+*.log.*
+
+# ============================================================================
+# OS-SPECIFIC FILES (Mac, Windows, Linux)
+# ============================================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================================================
+# IDE AND EDITOR FILES
+# ============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.pydevproject
+.settings/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================================================
+# TEMPORARY FILES
+# ============================================================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*~.nib
+
+# ============================================================================
+# ENVIRONMENT VARIABLES (Never commit secrets!)
+# ============================================================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# ============================================================================
+# TYPE CHECKERS
+# ============================================================================
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# ============================================================================
+# CYTHON
+# ============================================================================
+cython_debug/
+
+# ============================================================================
+# PROJECT-SPECIFIC EXCLUSIONS
+# ============================================================================
+# Add any project-specific files here
+
+# Exclude large embedding files if generated
+embeddings/
+*.npy
+
+# Exclude downloaded pre-trained models if cached locally
+.cache/
+transformers_cache/
+
+# ============================================================================
+# VERIFICATION NOTES
+# ============================================================================
+# To verify this works correctly:
+# 
+# 1. Place article_data.csv in data/ directory
+# 2. Run: git status
+# 3. You should NOT see data/article_data.csv listed
+# 4. You SHOULD see data/README.md listed (if new)
+#
+# If article_data.csv appears in git status:
+# - Check that data/*.csv is in this file (it is)
+# - Check that *.csv is in this file (it is)
+# - Run: git check-ignore -v data/article_data.csv
+#   This will show which rule is excluding it
+# ============================================================================
